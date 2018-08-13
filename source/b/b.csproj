@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Additions\NettyServerProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
@@ -80,21 +81,9 @@
   </ItemGroup>
       
   <ItemGroup>
-    <EmbeddedJar Include="..\..\externals\android\grpc-netty-1.13.2.jar">
-      <Link>Jars\grpc-netty-1.13.2.jar</Link>
+    <EmbeddedJar Include="..\..\externals\android\grpc-netty-1.14.0.jar">
+      <Link>Jars\grpc-netty-1.14.0.jar</Link>
     </EmbeddedJar>
-  </ItemGroup>
-  <!--
-  Xamarin Android Bindings csproj trick 
-  Enable code navigation in generated code.
-  Remove that after bindings are done! 
-  Otherwise duplicate symbol (definition) errors might arise
-  -->
-  <ItemGroup>
-      <Compile Include="obj\Debug\generated\src\*.cs" />
-      <Compile Include="obj\Release\generated\src\*.cs" />
-      <None Include="obj\Debug\api.xml" />
-      <None Include="obj\Release\api.xml" />
   </ItemGroup>
     
 </Project>

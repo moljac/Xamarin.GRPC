@@ -4,7 +4,7 @@
     
   -->
     <PropertyGroup>
-        <AssemblyName>Xamarin.Protobuf.Lite</AssemblyName>
+        <AssemblyName>Xamarin.Grpc.All</AssemblyName>
 
         <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
         <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -29,7 +29,7 @@
         -->
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>Xamarin.Grpc.All</PackageId>
-        <PackageVersion>1.13.2</PackageVersion>
+        <PackageVersion>1.14.0</PackageVersion>
         <Title>Xamarin.Grpc.All</Title>
         <Summary>
             Google GRPC All bindings for Xamarin
@@ -37,17 +37,17 @@
         <Description>
             Bindings for Google's GRPC All package (Google Play Services dependency)
         </Description>
-        <Owners>Microsoft Corporation</Owners>
-        <Authors>Microsoft / Xamarin</Authors>
-        <Copyright>Copyright 2018</Copyright>
+        <Owners>Microsoft</Owners>
+        <Authors>Microsoft</Authors>
+        <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
         <PackageLicenseUrl>
-        https://github.com/grpc/grpc/blob/master/LICENSE
+        https://go.microsoft.com/fwlink/?linkid=2009338
         </PackageLicenseUrl>
         <PackageProjectUrl>
-        https://github.com/grpc/grpc
+        https://go.microsoft.com/fwlink/?linkid=2009337
         </PackageProjectUrl>
         <RepositoryUrl>
-        https://github.com/grpc/grpc            
+        https://go.microsoft.com/fwlink/?linkid=2009337            
         </RepositoryUrl>
         <PackageReleaseNotes>
             Initial bindings
@@ -87,8 +87,8 @@
     <Compile Remove="Additions\LazyStringArrayList.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="..\..\externals\android\grpc-all-1.13.2.jar">
-      <Link>Jars\grpc-all-1.13.2.jar</Link>
+    <EmbeddedJar Include="..\..\externals\android\grpc-all-1.14.0.jar">
+      <Link>Jars\grpc-all-1.14.0.jar</Link>
     </EmbeddedJar>
   </ItemGroup>
   <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
